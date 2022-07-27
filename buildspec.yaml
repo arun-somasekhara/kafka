@@ -1,0 +1,21 @@
+version: 0.2
+
+run-as: root
+
+phases:
+  build:
+    on-failure: CONTINUE
+    commands:
+      - ./gradlew testJar
+    finally:
+      - command
+      - command
+artifacts:
+  files:
+    - location
+    - location
+  name: kafka-build-artifact
+  discard-paths: yes
+  base-directory: ~/
+  enable-symlinks: yes
+  s3-prefix: prefix
