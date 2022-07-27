@@ -16,6 +16,5 @@ artifacts:
     - location
   name: kafka-build-artifact
   discard-paths: yes
-  base-directory: ~/
   enable-symlinks: yes
   s3-prefix: prefix
